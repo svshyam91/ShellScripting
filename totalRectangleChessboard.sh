@@ -1,4 +1,5 @@
-#! /bin/bash
+#!/bin/bash
+chmod +x $0
 
 # Problem: Program to find total number of Rectangles in a N*N chessboard
 
