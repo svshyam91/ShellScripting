@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # This script sends mails automatically using mutt command
+# To change the sender's mail address; Make changes in file ~/.muttrc
 
 read -p "Enter recepient mail address: " email
 read -p "Enter subject for Email: " sub
