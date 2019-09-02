@@ -19,6 +19,10 @@ else
 	echo "$cont" | mutt -s "$sub" $email
 fi
 
+# $?- It is used to get the return value of last executed command 
+# 0- success
+# 1- failure
+
 if [[ $? -eq 0 ]]; then
 	echo "Mail sent successfully."
 else
