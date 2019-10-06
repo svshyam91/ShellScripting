@@ -10,6 +10,12 @@
 export DISPLAY=:0.0
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 
+# ADDITION: 
+# 1. Add feature to postpone for remainder if you have not 
+# done brush. Like, add buttons for 15mins, 20mins, 30mins to click
+# and postpone remainder. Add cronjob automatically
+# 2. Add sound for alarm.
+
 function main() {
 
 	# Grab the current date and time
