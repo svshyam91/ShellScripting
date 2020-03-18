@@ -23,7 +23,7 @@ function main() {
 	# min=$(date "+M")
 
 	# Take the reponse xmessage 
-	$(xmessage "Have you bushed your teeth tonight?" -timeout 10 -buttons yes,no -geometry 500 -center)
+	$(xmessage "Have you bushed your teeth tonight?" -timeout 10 -buttons yes,no,15mins -geometry 500 -center)
 
 	# Save the exit status of last command 
 	status=$(echo $?)
