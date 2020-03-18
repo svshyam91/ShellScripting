@@ -1,7 +1,10 @@
 #! /bin/bash
 
+# This script checks internet connection(15 times with wait of 5 seconds)
+#+ and sends email that you have started the system.
+
 # Exporting Environment variables for sending notification
-export export DISPLAY=:0.0
+export DISPLAY=:0.0
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 
 
@@ -10,7 +13,7 @@ function check_internet() {
 	no_of_time_tried = 0
 	while [[ $status -eq 0 && $no_of_time_tried -lt 15 ]]; do
 
-		#Sleep for 5 seconds
+		#Sleep for 60 seconds
 		sleep 60s
 
 		# Check internet connection 
